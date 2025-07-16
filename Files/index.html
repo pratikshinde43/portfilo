@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pratik Shinde | Portfolio</title>
+  <link rel="stylesheet" href="index_style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Pratik Shinde Portfolio</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#ongoing">Ongoing Projects</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Hello, I'm Pratik Shinde</h2>
+    <p>Software & Data Engineer crafting modern, scalable solutions.</p>
+    <a href="#contact" class="btn">Contact Me</a>
+  </section>
+
+  <section id="about" class="fade-on-scroll">
+    <h2>About Me</h2>
+    <p>I am a Software & Data Engineer preparing to become a Solution Architect by leveraging my experience in software system design and architecture to build enterprise-scale data solutions across both the mechanical and software industry domains. I bring 3 years of software development experience and 2 years as an Azure Data Engineer. Skilled in building scalable, secure data pipelines using Azure Data Factory, Synapse, Data Lake, and Azure SQL. Experienced in Python package development, CI/CD implementation, and cloud platforms like Azure and AWS. Strong background in Django, scripting, system architecture, and automation. Proficient in SQL/NoSQL, REST APIs, Docker, and Git. Focused on designing high-performance systems that support long-term business goals.</p>
+    
+    <div class="currently-working fade-on-scroll">
+      <h3>Currently Working</h3>
+      <p>Data Engineer at Atlas Copco Group Pvt LTD</p>
+    </div>
+  </section>
+
+  <section id="certifications" class="fade-on-scroll">
+    <h2>Certifications</h2>
+    <div class="cert-grid">
+      <div class="cert-card fade-on-scroll">
+        <h3>Artificial Intelligence Professional</h3>
+        <p>Issued by Defence Research and Development Organisation (DRDO)</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="ongoing">
+    <h2>Ongoing Projects</h2>
+    <div class="project-grid">
+      <div class="project-card fade-on-scroll">
+        <h3>Website & Android App for Jagdhamb Trust Pune Dhol Pathak</h3>
+        <p>Currently designing and developing both a responsive website and an Android application for Jagdhamb Trust Pune Dhol Pathak, aimed at showcasing cultural activities, managing event updates, and improving community engagement.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+
+      <div class="project-card fade-on-scroll">
+        <h3>Mail Server on CentOS (Python3)</h3>
+        <p>Creates a mail server on CentOS using Python and shell scripting for automated email handling.</p>
+        <a href="https://github.com/pratikshinde43/mail-server-Centos-Python3" target="_blank">View Project</a>
+      </div>
+
+      <div class="project-card fade-on-scroll">
+        <h3>Signature Extraction using Regex</h3>
+        <p>Extracts signatures from emails using regular expressions in Python for automated text analysis.</p>
+        <a href="https://github.com/pratikshinde43/Signature-Extraction-RegularExpression-Python3" target="_blank">View Project</a>
+      </div>
+
+      <div class="project-card fade-on-scroll">
+        <h3>Extract Text from Image (AI)</h3>
+        <p>Uses AI techniques to extract text content from images with Python, useful for OCR tasks.</p>
+        <a href="https://github.com/pratikshinde43/ExtractTextFromImage-Using-AI" target="_blank">View Project</a>
+      </div>
+
+      <div class="project-card fade-on-scroll">
+        <h3>Next Word Prediction in Chat</h3>
+        <p>Implements a model in Python to predict the next word during a conversation, demonstrating NLP techniques.</p>
+        <a href="https://github.com/pratikshinde43/NextWordPredictionInChat" target="_blank">View Project</a>
+      </div>
+
+      <div class="project-card fade-on-scroll">
+        <h3>NLP Naive Bayes Classifier</h3>
+        <p>Classifies words into verbs, nouns, or prepositions using a Naive Bayes Classifier in Python 3.</p>
+        <a href="https://github.com/pratikshinde43/NLP-Naive-Bayes-Classifier" target="_blank">View Project</a>
+      </div>
+
+      <div class="project-card fade-on-scroll">
+        <h3>Serverless Deployment</h3>
+        <p>Demonstrates deploying applications serverlessly using PowerShell scripting for automation.</p>
+        <a href="https://github.com/pratikshinde43/Serverless" target="_blank">View Project</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p>Flat no 10, Shri Vishwas Shri Apartment,<br>
+         Near Vanaz Metro Station, Kothrud, Pune,<br>
+         Maharashtra, India</p>
+      <p>Contact Number: <a href="tel:+919767704126">+91 9767704126</a></p>
+    </div>
+    <div class="contact-buttons">
+      <a href="mailto:pratikpshinde1005@gmail.com" class="contact-btn">Email Me</a>
+      <a href="https://www.linkedin.com/in/pratik-shinde-tech/" class="contact-btn" target="_blank">Connect on LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Pratik Shinde</p>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.fade-on-scroll').forEach(element => {
+      observer.observe(element);
+    });
+  </script>
+</body>
+</html>
