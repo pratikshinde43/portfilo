@@ -7,7 +7,7 @@ This is my personal portfolio website showcasing my experience, skills, and proj
 
 ## 🌐 Live Website
 
-[View Portfolio](https://your-username.github.io/)
+[View Portfolio](https://www.pratikshinde.info/)
 
 ## ✨ Tech Stack
 
